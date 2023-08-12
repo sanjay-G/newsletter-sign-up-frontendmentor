@@ -1,0 +1,130 @@
+@font-face {
+    font-family: roboto;
+    src: url(assets/fonts/Roboto-Regular.ttf);
+}
+body
+{
+   display: flex;
+   background-color:hsl(235, 18%, 26%);
+   justify-content: center; 
+   margin-top: 07%;
+}
+.childBox
+{
+
+    display: flex;
+    width: fit-content;
+    height: auto;
+    background-color: rgb(252, 249, 249);
+    padding: 20px;
+    border-radius: 20px;
+}
+.leftPart
+{
+   width:60%;
+   height: fit-content;
+   font-family: roboto;
+   margin: 05%;
+}
+.line1
+{
+    font-size: 50px;
+    font-family: roboto;
+    font-style: bold;
+    font-weight: 600;
+    height: fit-content;
+}
+.line2
+{
+   font-size: 16px;
+   margin-bottom: 25px;
+   margin-top: -20px;
+}
+li
+{
+    list-style-type: none;
+    font-size: 16px;
+    padding-bottom: 15px;   
+}
+.mailLabel
+{
+    font-size: 14px;
+    font-weight: 600;
+}
+#mailBox
+{
+  width: 90%;
+  height: 35px;
+  border-radius: 05px;
+  border-color: #FF6A3A;
+  outline: none;
+  border-style: solid;
+  border-width: 0.11em;
+  margin-top: 10px;
+  font-size: 16px;
+  font-family: roboto;
+  font-weight: 200;
+}
+.mailButton
+{
+    width: 90%;
+    height: 40px;
+    border-radius: 05px;
+    margin-top: 30px;
+    background-color:rgb(22, 17, 83) ;
+    color: #ffffff;
+    font-size: 16px;
+    margin-left: 2px;
+}
+
+/* .mailErrorLabel 
+{
+    font-size: 13px;
+    font-weight: 600;
+    color: #FF6A3A;
+    margin-left: 110px;
+    Valid Email Required
+    
+} */
+
+/* #mailBox
+{
+    background-color:#ff3a3a;
+    opacity: 40%;
+}  */
+
+::placeholder
+{
+    color:rgb(124, 122, 122);
+    opacity: 10;
+    font-family: roboto;
+    font-size: 16px;
+}
+
+
+@media only screen and (max-width:600px)
+{
+  body
+  {
+    background-color: #0000;
+    display: block;
+    width: 100%;
+  }
+  .childBox{
+    background-color: #ffffff;
+    display:flex;
+    flex-direction: column-reverse;
+    margin-top: -220px;
+  }
+  .leftPart
+{
+   width:100%;
+   height: fit-content;
+   font-family: roboto;
+   margin: 05%;
+}
+}
+/* Resources 
+1) https://css-tricks.com/put-images-in-all-four-corners-with-css-positioning/
+2)    flex-direction: column-reverse;
+ */
